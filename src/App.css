@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-color:#D3D3D3;
+}
+
+.wrapper {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ column-gap: 1em;
+ row-gap: 1em;
+ grid-auto-rows: 1fr 1fr ;
+}
+
+.wrapper > div {
+  background-color: gray;
+  padding: 1em;
+  margin: 5px;
+}
+
+.visitors {
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+
+.sidebar {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  padding: 10px;
+}
+.analysis {
+  text-align: center;
+}
